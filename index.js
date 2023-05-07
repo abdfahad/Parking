@@ -37,7 +37,7 @@ app.get('/FrontEnd', (req,res,next)=>{
 
 app.post('/sensorData', function (req,res,next) {
   let data = req.body.data;
-  console.log("posted to /sensorData");
+  console.log(`posted to /sensorData : ${data}`);
   io.emit('data', data);
   res.sendStatus(200);
 });
