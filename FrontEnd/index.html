@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+
+    <script src="/socket.io/socket.io.js"></script>
+
+   
+    <style>
+
+      #sample {
+        background-color: red;
+        width: 300px;
+        height: 300px;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+    <h1>Communicating from an Arduino to Node.js</h1>
+    <div id="sample"></div>
+
+  </body>
+  <script>
+
+    var socket = io('http://localhost:3000');
+
+    socket.on('data', function(data) {
+        console.log(data);
+        document.getElementById('sample').style.opacity = data+"%"; 
+    });
+
+    </script>
+
+
+</html>
