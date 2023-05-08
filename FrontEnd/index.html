@@ -24,7 +24,7 @@
   </body>
   <script>
 
-    var socket = io('http://localhost:3000');
+    var socket = io();
 
     socket.on('data', function(data) {
         console.log(data);
