@@ -3,7 +3,7 @@ var fs = require('fs');
 const { Server } = require('socket.io');
 
 const app = express();
-
+app.use(express.json());
 const Port = process.env.PORT || 3000;
 
 const server = require('http').createServer(app);
@@ -36,7 +36,7 @@ app.get('/FrontEnd', (req,res,next)=>{
 })
 
 app.post('/sensorData', function (req,res,next) {
-  let data = req.body.data;
+  let data = req.body;
   console.log(`posted to /sensorData : ${data}`);
   io.emit('data', data);
   res.sendStatus(200);
