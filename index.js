@@ -14,6 +14,9 @@ const io = new Server(server, {
 io.on('connection', function(socket) {
     
   console.log('Socket connected');
+  socket.on('message', sensorData =>{
+    console.log(sensorData);
+  })
     
 });
 
