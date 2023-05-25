@@ -3,6 +3,9 @@ var fs = require('fs');
 const { Server } = require('socket.io');
 
 const app = express();
+const cors = require('cors')
+
+app.use(cors());
 app.use(express.json());
 const Port = process.env.PORT || 3000;
 
