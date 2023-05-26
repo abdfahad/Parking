@@ -6,6 +6,8 @@ const app = express();
 const cors = require('cors')
 
 app.use(cors());
+app.use(express.static(__dirname + '/FrontEnd'));
+
 app.use(express.json());
 const Port = process.env.PORT || 3000;
 
@@ -39,6 +41,7 @@ app.get('/socket.io/socket.io.js', (req, res) => {
 app.get('/FrontEnd', (req,res,next)=>{
   res.writeHead(200, {'Content-Type': 'text/html'});
   res.end(index);
+  
 })
 
 app.post('/sensorData', function (req,res,next) {

@@ -6,80 +6,256 @@
 
    
     <style>
-      .container{
-          display: flex;
-          width: 80vw;
-          margin: 0 auto;
-          justify-content: center;
-          /* background-color: aqua; */
-          font-size: 7rem;
-          color: white;
-      }
-      .temp{
-          flex: 1;
-          background-color: rgb(78, 76, 78);
-          border-top: 4px solid black;
-          border-left: 2px solid black;
-          border-right: 2px solid black;
-          text-align: center;
-          margin-bottom: 0;
-          /* padding-top: 30px; */
-      }
-      .smallText{
-          font-size: small;
-      }
-      .Free{
-          flex: 1;
-          background-color: green;
-          border-top: 4px solid black;
-          border-left: 2px solid black;
-          border-right: 2px solid black;
-          text-align: center;
-          margin-bottom: 0;
-      }
-      .Occupied{
-          flex: 1;
-          background-color: red;
-          border-top: 4px solid black;
-          border-left: 2px solid black;
-          border-right: 2px solid black;
-          text-align: center;
-          margin-bottom: 0;
-      }
-      .btn{
-          background-color: rgb(14, 62, 117);
-          color: white;
-          padding: 5px;
-          font-size: large;
-          border-radius: 10px 10px;
-      }
-  </style>
+        .container{
+            display: flex;
+            width: 80vw;
+            margin: 0 auto;
+            justify-content: center;
+            background-color: aqua;
+            font-size: 7rem;
+            color: white;
+            /* padding-top: 0; */
+        }
+        .temp{
+            flex: 1;
+            background-color: rgb(205, 39, 211);
+            border-top: 4px solid black;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            text-align: center;
+            margin-bottom: 0;
+            margin-top: 0;
+            /* padding-top: 30px; */
+        }
+        .smallText{
+            font-size: small;
+        }
+        .Free{
+            flex: 1;
+            background-color: green;
+            border-top: 4px solid black;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            text-align: center;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        .Occupied{
+            flex: 1;
+            background-color: red;
+            border-top: 4px solid black;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            text-align: center;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        .btn{
+            background-color: darkorange;
+            color: white;
+            padding: 5px;
+            font-size: large;
+            border-radius: 10px 10px;
+        }
+        .container1{
+            display: flex;
+            width: 80vw;
+            margin: 0 auto;
+            justify-content: center;
+            /* background-color: rgb(31, 51, 161); */
+            font-size: 6rem;
+            /* color: white; */
+            color: Grey;
+        }
+        .sym{
+            flex: 1;
+            /* margin-right: 30px; */
+            /* margin-right:  430px; */
+            /* font-size: 30px; */
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: right;
+            /* border: 2px solid red; */
+            /* font-size: 50px; */
+        }
+        .imgSize{
+            width: 210px;
+            height: 140px;
+
+        }
+        .imgDiv3{
+            margin-right: 85px;
+        }
+        @media screen and (max-width: 1300px){
+            .addMargin{
+                margin: 5px auto 0;
+            }
+            .imgSize{
+                width: 180px;
+                height: 112px;
+            }
+            .imgDiv3{
+            margin-right: 75px;
+        }
+        .container1{
+            display: flex;
+            width: 80vw;
+            margin: 0 auto;
+            justify-content: center;
+            /* background-color: rgb(31, 51, 161); */
+            font-size: 4.7rem;
+            /* color: white; */
+            color: Grey;
+        }
+        }
+        @media screen and (max-width: 1040px){
+            .container{
+            display: flex;
+            width: 80vw;
+            margin: 0 auto;
+            justify-content: center;
+            background-color: aqua;
+            font-size: 4.5rem;
+            color: white;
+            /* padding-top: 0; */
+        }
+        .addMargin{
+                margin: 5px auto 0;
+            }
+            .imgSize{
+                width: 140px;
+                height: 92px;
+            }
+            .imgDiv3{
+            margin-right: 60px;
+        }
+        .container1{
+            display: flex;
+            width: 80vw;
+            margin: 0 auto;
+            justify-content: center;
+            /* background-color: rgb(31, 51, 161); */
+            font-size: 4.4rem;
+            /* color: white; */
+            color: Grey;
+        }
+        }
+        @media screen and (max-width: 900px){
+            h1{
+                font-size: 28px;
+                margin-top: 20px;
+            }
+            .btnText{
+                font-size: 16px;
+            }
+            .container{
+            display: flex;
+            width: 80vw;
+            margin: 0 auto;
+            justify-content: center;
+            background-color: aqua;
+            font-size: 4.5rem;
+            color: white;
+            /* padding-top: 0; */
+        }
+        .addMargin{
+                margin: 5px auto 0;
+            }
+            .imgSize{
+                width: 100px;
+                height: 72px;
+            }
+            .imgDiv3{
+            margin-right: 50px;
+        }
+        .container1{
+            display: flex;
+            width: 80vw;
+            margin: 0 auto;
+            justify-content: center;
+            /* background-color: rgb(31, 51, 161); */
+            font-size: 3.5rem;
+            /* color: white; */
+            color: Grey;
+        }
+        }
+        @media screen and (max-width: 700px){
+            h1{
+                font-size: 25px;
+                margin-top: 20px;
+            }
+            .btnText{
+                font-size: 14px;
+            }
+            .container{
+            display: flex;
+            width: 80vw;
+            margin: 0 auto;
+            justify-content: center;
+            background-color: aqua;
+            font-size: 3.2rem;
+            color: white;
+            /* padding-top: 0; */
+        }
+        .addMargin{
+                margin: 5px auto 0;
+            }
+            .imgSize{
+                width: 70px;
+                height: 57px;
+            }
+            .imgDiv3{
+            margin-right: 35px;
+        }
+        .container1{
+            display: flex;
+            width: 80vw;
+            margin: 0 auto;
+            justify-content: center;
+            /* background-color: rgb(31, 51, 161); */
+            font-size: 3rem;
+            /* color: white; */
+            color: Grey;
+        }
+        }
+    </style>
 
   </head>
   <body>
     <br>
     <hr>
-    <h1 style="color:White; background-color: rgb(14, 13, 12);">Parking Space 1</h1>
-    <button class="btn">Visit Space 2</button>
-    <div class="container">
-        <p class="temp">S1 <br><span class="smallText">No Data</span></p>
-        <p class="temp">S2<br><span class="smallText">No Data</span></p>
-        <p class="temp">S3<br><span class="smallText">No Data</span></p>
-        <p class="temp">S4<br><span class="smallText">No Data</span></p>
-        <p class="temp">S5<br><span class="smallText">No Data</span></p>
+    <h1 style="color:White; background-color: darkorange;">Parking Space 1</h1>
+    <button class="btn btnText">Visit Space 2</button>
+    <div class="container addMargin">
+        <p class="temp">S1 <br><span class="smallText">Loading...</span></p>
+        <p class="temp">S2<br><span class="smallText">Loading...</span></p>
+        <p class="temp">S3<br><span class="smallText">Loading...</span></p>
+        <p class="temp">S4<br><span class="smallText">Loading...</span></p>
+        <p class="temp">S5<br><span class="smallText">Loading...</span></p>
 
     </div>
+    <div class="container1">
+        <div>In</div>
+    <div class="sym"><i class="fa-solid fa-arrow-right fa-fade fa-sm"></i></div>
+    <!-- <div class="sym">Parking</div> -->
+    <div class="sym"  style="padding-left: 0;" ><i class="fa-solid fa-arrow-right fa-fade fa-sm"></i></div>
+
+    <div class="sym imgDiv3" ><i class="fa-solid fa-arrow-right fa-fade fa-sm"></i></div>
+    <div>Out</div>
+</div>
+ 
     <div class="container">
-        <p class="temp">S6 <br><span class="smallText">No Data</span></p>
-        <p class="temp">S7<br><span class="smallText">No Data</span></p>
-        <p class="temp">S8<br><span class="smallText">No Data</span></p>
-        <p class="temp">S9<br><span class="smallText">No Data</span></p>
-        <p class="temp">S10<br><span class="smallText">No Data</span></p>
+        <p class="temp">S6 <br><span class="smallText">Loading...</span></p>
+        <p class="temp">S7<br><span class="smallText">Loading...</span></p>
+        <p class="temp">S8<br><span class="smallText">Loading...</span></p>
+        <p class="temp">S9<br><span class="smallText">Loading...</span></p>
+        <p class="temp">S10<br><span class="smallText">Loading...</span></p>
 
     </div>
     <br>
     <hr>
-  </body>
+    <script src="PSpace1.js"></script>
+</body>
+<script src="https://kit.fontawesome.com/1e9aeebec8.js" crossorigin="anonymous"></script>
   <script>
     let Parray= document.querySelectorAll('div')[0].children;
 let act= document.querySelector('.btn');
@@ -91,29 +267,29 @@ let act= document.querySelector('.btn');
         if(data.S1 === 0)
             {
                 Parray[0].className= 'Free';
-                Parray[0].innerHTML= '1<br><span class="smallText">Free</span>';
+                Parray[0].innerHTML= 'S1<br><span class="smallText">Free</span>';
             }
             else{
                 Parray[0].className= 'Occupied';
-                Parray[0].innerHTML= '1<br><span class="smallText">Occupied</span>';
+                Parray[0].innerHTML= 'S1<br><span class="smallText">Occupied</span>';
             }
             if(data.S2 === 0)
             {
                 Parray[1].className= 'Free';
-                Parray[1].innerHTML= '2<br><span class="smallText">Free</span>';
+                Parray[1].innerHTML= 'S2<br><span class="smallText">Free</span>';
             }
             else{
                 Parray[1].className= 'Occupied';
-                Parray[1].innerHTML= '2<br><span class="smallText">Occupied</span>';
+                Parray[1].innerHTML= 'S2<br><span class="smallText">Occupied</span>';
             }
             if(data.S3 === 0)
             {
                 Parray[2].className= 'Free';
-                Parray[2].innerHTML= '3<br><span class="smallText">Free</span>';
+                Parray[2].innerHTML= 'S3<br><span class="smallText">Free</span>';
             }
             else{
                 Parray[2].className= 'Occupied';
-                Parray[2].innerHTML= '3<br><span class="smallText">Occupied</span>';
+                Parray[2].innerHTML= 'S3<br><span class="smallText">Occupied</span>';
             }
     });
 
